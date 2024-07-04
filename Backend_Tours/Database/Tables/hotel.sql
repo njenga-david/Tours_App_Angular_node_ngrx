@@ -1,0 +1,13 @@
+USE Njenga_Tour;
+
+CREATE TABLE Hotels (
+    id VARCHAR(50) PRIMARY KEY,
+    name NVARCHAR(255) NOT NULL,
+    location NVARCHAR(255) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    createdAt DATETIME DEFAULT GETDATE(),
+    updatedAt DATETIME DEFAULT GETDATE()
+)
+GO
+
+SELECT * FROM Hotels

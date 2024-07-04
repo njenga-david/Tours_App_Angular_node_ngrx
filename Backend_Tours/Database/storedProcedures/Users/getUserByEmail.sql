@@ -1,0 +1,8 @@
+USE Njenga_Tour
+GO
+CREATE OR ALTER PROCEDURE getUserByEmail
+  @Email NVARCHAR(100)
+AS
+BEGIN
+  SELECT * FROM users1 WHERE Email = @Email
+END
